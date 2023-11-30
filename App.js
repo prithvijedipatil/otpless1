@@ -10,7 +10,7 @@ const App = () => {
   useEffect(() => {
     console.log("inside use effect");
     window.otpless = (otplessUser) => {
-      alert(`Welcome ${otplessUser.email.name}`);
+      alert(JSON.stringify(otplessUser));
     };
   }, []);
 
